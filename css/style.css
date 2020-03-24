@@ -1,69 +1,119 @@
-.black-header {
-    background: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 65px;
-    position: absolute;
-    z-index: 10;
-    right: 70px;
-    top: -20px;
-}
-
-.black-header p {
-    color: #3e3e3e;
-    margin-top: 13px;
-}
-
-input {
-    color: white;
-    background: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #303030;
-    font-size: 30px;
-}
-
-.yellow-header {
-    background-color: #f5bc2c;
-    padding: 20px 45px;
-    position: absolute;
-    z-index: 5;
-    right: 70px;
-    top: 130px;
-}
-
-.yellow-header img {
-    padding-right: 35px;;
-}
-
 body {
     background: #464f54;
 }
 
-.content {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-header {
+    background: black;
+    width: 816px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    position: absolute;
+    z-index: 10;
+    top: -125px;
+    left: 255px;
+}
+
+.black-header  p {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    font-size: 15px;
+    margin-top: 13px;
+    padding-bottom: 12px;
+}
+
+.black-header input {
+    color: #ffffff;
+    background: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 48px;
+}
+
+.black-header hr {
+    border: 1px solid #303030;
+    margin-top: 12px;
+}
+
+.yellow-header {
+    background-color: #f5bc2c;
+    padding: 20px 0 20px 40px;
+    position: absolute;
+    width: 772px;
+    z-index: 5;
+    top: 94px;
+    left: 319px;
+}
+
+.yellow-header img {
+    margin-right: 35px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.yellow-header img:hover {
+    opacity: 1;
+}
+
+.main {
+    width: 1060px;
+    margin-top: 150px;
     background: #ffffff;
-    margin: 70px 70px;
     position: relative;
-    padding-top: 200px;
+}
+
+.line {
+    border-left: 2px solid #e8eced;
+    margin-left: 67px;
+    padding-left: 58px;
+}
+
+.content {
+    padding: 200px 130px 10px 0;
 }
 
 .post-author p {
+    font-family: 'Montserrat', sans-serif;
     color: #b9b9b9;
     font-size: 20px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 45px;
 }
 
-h1 {
+.post-title h1 {
     font-size: 70px;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 5px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .post-title > p {
-    padding-top: 18px;
+    padding-top: 5px;
     padding-bottom: 50px;
     color: #8f8f8f;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.text > p {
+   font-family: 'PT Sans', sans-serif; 
+   font-size: 27px; 
+   padding-bottom: 35px;
+   line-height: 1.5;
+}
+
+.italic {
+    font-style: italic;
 }
